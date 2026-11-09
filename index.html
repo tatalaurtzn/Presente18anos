@@ -16,8 +16,7 @@
       min-height: 100vh;
       font-family: Georgia, serif;
       overflow: hidden;
-      background:
-        radial-gradient(ellipse at 50% 45%, #762b9c 0%, #51156f 48%, #310b4b 100%);
+      background: radial-gradient(ellipse at 50% 45%, #762b9c 0%, #51156f 48%, #310b4b 100%);
       color: #fff0ff;
     }
 
@@ -33,7 +32,6 @@
       isolation: isolate;
     }
 
-    /* Corações espalhados pelo fundo */
     .coracoes {
       position: absolute;
       inset: 0;
@@ -63,14 +61,8 @@
     }
 
     @keyframes aparecer {
-      from {
-        opacity: 0;
-        transform: translateY(15px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
     }
 
     h1 {
@@ -99,6 +91,27 @@
       letter-spacing: 1px;
       color: #f0d8fa;
       font-style: italic;
+    }
+
+    .botao-iniciar {
+      display: inline-block;
+      margin-top: 38px;
+      padding: 13px 38px;
+      border: 1px solid rgba(255, 230, 255, 0.75);
+      border-radius: 50px;
+      color: #fff0ff;
+      text-decoration: none;
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      letter-spacing: 3px;
+      transition: all 0.3s ease;
+    }
+
+    .botao-iniciar:hover {
+      background: #f0d8fa;
+      color: #42105b;
+      transform: translateY(-3px);
+      box-shadow: 0 5px 20px rgba(255, 200, 255, 0.2);
     }
   </style>
 </head>
@@ -129,14 +142,16 @@
 
     <section class="conteudo">
       <h1>Wellingthon</h1>
-
       <div class="coracao-central">♥</div>
-
       <h1>Thayna</h1>
 
       <p class="frase">
         O pedaço favorito do meu coração.
       </p>
+
+      <a href="musicas.html" class="botao-iniciar">
+        INICIAR ♡
+      </a>
     </section>
 
   </main>
